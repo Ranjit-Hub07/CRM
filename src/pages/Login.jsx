@@ -170,10 +170,10 @@ export default function Login() {
             </p>
             <div className="flex items-center gap-3 mt-4">
               <div className="w-10 h-10 rounded-full bg-[#4f46e5] text-white flex items-center justify-center font-bold">
-                JD
+                PS
               </div>
               <div>
-                <p className="font-semibold text-[#131b2e] text-xs" style={{ fontFamily: 'Inter', letterSpacing: '0.05em' }}>Jane Doe</p>
+                <p className="font-semibold text-[#131b2e] text-xs" style={{ fontFamily: 'Inter', letterSpacing: '0.05em' }}>Priya Sharma</p>
                 <p className="text-[#464555] text-xs" style={{ fontFamily: 'Inter' }}>VP of Sales, TechCorp</p>
               </div>
             </div>
