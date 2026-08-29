@@ -24,6 +24,7 @@ app.use(express.json());
 
 // ── Routes ───────────────────────────────────────────
 app.use('/api', routes);
+app.use('/', routes);
 
 // Health check
 app.get('/health', (_req, res) => res.json({ status: 'ok', time: new Date().toISOString() }));
