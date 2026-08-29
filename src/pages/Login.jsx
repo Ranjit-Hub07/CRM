@@ -161,23 +161,6 @@ export default function Login() {
             style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAyIb6wDP0ivhORjNIPvwwyQTvx8Op8ar38KRnHHtRZNZC0095rOR-PBQZpE2NfMADJFE3bFkbd7E3xNZc11qUYMsIXiKWMMQ45y4c1gMU-3CjMC-7dnTmtnzC-J1MT0NFDXJIHAU8KZiTyKrvbhLTnEHqpfPScmrBSfzTc5GwAC1mtD-joC1lClthfr4ov0OYxBgwERK3bkSvheVWhy08ZcSU-Z8qCmILoEytpJCOaKQf0Lsfz4pQ')" }}
           ></div>
           <div className="absolute inset-0 bg-gradient-to-tr from-[#3525cd]/10 to-transparent"></div>
-          <div
-            className="absolute bottom-10 left-10 right-10 bg-white/80 backdrop-blur-md p-6 rounded-xl border border-[#c7c4d8]"
-            style={{ boxShadow: '0px 1px 3px rgba(15, 23, 42, 0.08)' }}
-          >
-            <p className="font-semibold text-[#131b2e] mb-2" style={{ fontFamily: 'Plus Jakarta Sans', fontSize: '20px' }}>
-              "SalesForce Pro has completely transformed our revenue pipeline operations."
-            </p>
-            <div className="flex items-center gap-3 mt-4">
-              <div className="w-10 h-10 rounded-full bg-[#4f46e5] text-white flex items-center justify-center font-bold">
-                PS
-              </div>
-              <div>
-                <p className="font-semibold text-[#131b2e] text-xs" style={{ fontFamily: 'Inter', letterSpacing: '0.05em' }}>Priya Sharma</p>
-                <p className="text-[#464555] text-xs" style={{ fontFamily: 'Inter' }}>VP of Sales, TechCorp</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
