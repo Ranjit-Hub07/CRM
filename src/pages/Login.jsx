@@ -136,11 +136,32 @@ export default function Login() {
 
         {/* Demo credentials hint */}
         <div className="mt-6 p-3.5 bg-[#f2f3ff] border border-[#c7c4d8]/60 rounded-xl">
-          <p className="text-xs text-[#464555] font-semibold mb-2" style={{ fontFamily: 'Inter' }}>Demo Credentials:</p>
-          <div className="space-y-1 text-xs text-[#464555]" style={{ fontFamily: 'Inter' }}>
-            <p><span className="text-[#3525cd] font-medium">Admin:</span> admin@nexuscrm.com / admin123</p>
-            <p><span className="text-[#3525cd] font-medium">Manager:</span> rahul@nexuscrm.com / manager123</p>
-            <p><span className="text-[#3525cd] font-medium">Executive:</span> sneha@nexuscrm.com / exec123</p>
+          <p className="text-xs text-[#464555] font-semibold mb-2" style={{ fontFamily: 'Inter' }}>Click to autofill credentials:</p>
+          <div className="grid grid-cols-3 gap-2">
+            <button
+              type="button"
+              onClick={() => { setEmail('admin@nexuscrm.com'); setPassword('admin123'); setError(''); }}
+              className="text-left p-2 rounded-lg bg-white border border-[#c7c4d8]/70 hover:border-[#3525cd] hover:bg-indigo-50/50 transition-all cursor-pointer"
+            >
+              <span className="block text-[11px] font-bold text-[#3525cd]">Admin</span>
+              <span className="block text-[10px] text-[#464555] truncate">admin@...</span>
+            </button>
+            <button
+              type="button"
+              onClick={() => { setEmail('rahul@nexuscrm.com'); setPassword('manager123'); setError(''); }}
+              className="text-left p-2 rounded-lg bg-white border border-[#c7c4d8]/70 hover:border-[#3525cd] hover:bg-indigo-50/50 transition-all cursor-pointer"
+            >
+              <span className="block text-[11px] font-bold text-[#3525cd]">Manager</span>
+              <span className="block text-[10px] text-[#464555] truncate">rahul@...</span>
+            </button>
+            <button
+              type="button"
+              onClick={() => { setEmail('sneha@nexuscrm.com'); setPassword('exec123'); setError(''); }}
+              className="text-left p-2 rounded-lg bg-white border border-[#c7c4d8]/70 hover:border-[#3525cd] hover:bg-indigo-50/50 transition-all cursor-pointer"
+            >
+              <span className="block text-[11px] font-bold text-[#3525cd]">Executive</span>
+              <span className="block text-[10px] text-[#464555] truncate">sneha@...</span>
+            </button>
           </div>
         </div>
 
