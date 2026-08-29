@@ -154,13 +154,50 @@ export default function Login() {
           </div>
         </div>
 
-        {/* Illustration Side */}
-        <div className="hidden lg:block w-1/2 relative bg-[#f2f3ff] overflow-hidden">
-          <div
-            className="absolute inset-0 bg-cover bg-center opacity-80 mix-blend-multiply"
-            style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAyIb6wDP0ivhORjNIPvwwyQTvx8Op8ar38KRnHHtRZNZC0095rOR-PBQZpE2NfMADJFE3bFkbd7E3xNZc11qUYMsIXiKWMMQ45y4c1gMU-3CjMC-7dnTmtnzC-J1MT0NFDXJIHAU8KZiTyKrvbhLTnEHqpfPScmrBSfzTc5GwAC1mtD-joC1lClthfr4ov0OYxBgwERK3bkSvheVWhy08ZcSU-Z8qCmILoEytpJCOaKQf0Lsfz4pQ')" }}
-          ></div>
-          <div className="absolute inset-0 bg-gradient-to-tr from-[#3525cd]/10 to-transparent"></div>
+        {/* Right Feature Showcase Side */}
+        <div className="hidden lg:flex w-1/2 relative bg-gradient-to-br from-[#3525cd] via-[#4338ca] to-[#1e1b4b] text-white p-12 flex-col justify-between overflow-hidden">
+          {/* Decorative background glow circles */}
+          <div className="absolute -top-24 -right-24 w-96 h-96 bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
+          <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-[#818cf8]/20 rounded-full blur-3xl pointer-events-none"></div>
+
+          {/* Top Brand Tag */}
+          <div className="relative z-10">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-xs font-medium text-indigo-100">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              Enterprise CRM Platform
+            </div>
+          </div>
+
+          {/* Center Content */}
+          <div className="relative z-10 my-auto space-y-6">
+            <h2 className="text-3xl font-bold leading-tight" style={{ fontFamily: 'Plus Jakarta Sans' }}>
+              Accelerate your revenue & manage customer pipelines effortlessly.
+            </h2>
+            <p className="text-indigo-100/80 text-sm leading-relaxed" style={{ fontFamily: 'Inter' }}>
+              All-in-one platform for sales teams to track leads, close deals faster, and drive data-backed growth.
+            </p>
+
+            <div className="space-y-3 pt-2">
+              <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm p-3 rounded-lg border border-white/10">
+                <span className="material-symbols-outlined text-indigo-300">insights</span>
+                <span className="text-sm font-medium">Real-time Pipeline & Revenue Analytics</span>
+              </div>
+              <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm p-3 rounded-lg border border-white/10">
+                <span className="material-symbols-outlined text-indigo-300">group</span>
+                <span className="text-sm font-medium">Team Performance & Lead Management</span>
+              </div>
+              <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm p-3 rounded-lg border border-white/10">
+                <span className="material-symbols-outlined text-indigo-300">verified_user</span>
+                <span className="text-sm font-medium">Role-Based Access & Secure Cloud Storage</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Footer Note */}
+          <div className="relative z-10 text-xs text-indigo-200/70 flex items-center justify-between border-t border-white/10 pt-4" style={{ fontFamily: 'Inter' }}>
+            <span>© 2026 SalesForce Pro Inc.</span>
+            <span>Enterprise Security Guaranteed</span>
+          </div>
         </div>
       </div>
     </div>
