@@ -3,7 +3,7 @@ import Sidebar from '../components/Sidebar';
 import Topbar from '../components/Topbar';
 import { useGetTeamMembersQuery } from '../store/apiSlice';
 
-const fmtCurrency = (n) => { if (!n) return '₹0'; if (n >= 1000000) return `₹${(n/1000000).toFixed(1)}M`; if (n >= 1000) return `₹${(n/1000).toFixed(0)}K`; return `₹${n}`; };
+const fmtCurrency = (n) => { if (!n) return '₹0'; if (n >= 1000000) return `₹${(n / 1000000).toFixed(1)}M`; if (n >= 1000) return `₹${(n / 1000).toFixed(0)}K`; return `₹${n}`; };
 const roleColors = { Admin: '#ba1a1a', Manager: '#e8590c', Executive: '#3525cd' };
 
 export default function Team() {
