@@ -21,18 +21,24 @@ app.get('/health', (_req, res) => res.json({ status: 'ok', time: new Date().toIS
 // ── Database Connection ──────────────────────────────
 async function connectDB() {
   const uri = process.env.MONGODB_URI;
+  const isProd = process.env.NODE_ENV === 'production';
 
-  // Attempt 1 — remote / .env URI
+  // Attempt 1 — remote / .env URI (always tried first)
   if (uri) {
     try {
       await mongoose.connect(uri);
       console.log('✅ Connected to MongoDB (remote)');
       return;
     } catch (err) {
-      console.warn('⚠️  Remote MongoDB connection failed:', err.message);
+      console.error('❌ Remote MongoDB connection failed:', err.message);
+      if (isProd) {
+        console.error('Production requires a valid MONGODB_URI. Exiting.');
+        process.exit(1);
+      }
     }
   }
 
+  // Dev-only fallbacks below
   // Attempt 2 — local MongoDB
   try {
     await mongoose.connect('mongodb://127.0.0.1:27017/nexus-crm');
